@@ -1,0 +1,204 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Jogo das Bandeiras</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="memory-game">
+
+        <div class="memory-card" data-framework="brasil">
+            <img class="front-face" src="img/brasil.jpg" alt="brasil">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="brasil">
+            <img class="front-face" src="img/brasil.jpg" alt="brasil">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="alemanha">
+            <img class="front-face" src="img/alemanha.jpg" alt="alemanha">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="alemanha">
+            <img class="front-face" src="img/alemanha.jpg" alt="alemanha">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="argentina">
+            <img class="front-face" src="img/argentina.jpg" alt="argentina">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="argentina">
+            <img class="front-face" src="img/argentina.jpg" alt="argentina">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="australia">
+            <img class="front-face" src="img/australia.jpg" alt="australia">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="australia">
+            <img class="front-face" src="img/australia.jpg" alt="australia">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="canada">
+            <img class="front-face" src="img/canada.jpg" alt="canada">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="canada">
+            <img class="front-face" src="img/canada.jpg" alt="canada">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="suica">
+            <img class="front-face" src="img/suiça.jpg" alt="suiça">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="suica">
+            <img class="front-face" src="img/suiça.jpg" alt="suiça">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="japao">
+            <img class="front-face" src="img/japao.png" alt="Japão">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="japao">
+            <img class="front-face" src="img/japao.png" alt="japao">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="object8">
+            <img class="front-face" src="img/USA.jpg" alt="USA">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="object8">
+            <img class="front-face" src="img/USA.jpg" alt="USA">
+            <img class="back-face" src="img/card.png" alt="Memory Card">
+        </div>
+
+        <div class="form-popup" id="popButton">
+<!--            <div class="form-containerButton">-->
+                <input type="button" value="It's a Match!" class="buttonPop" id="buttonPop" onclick="changePopup()"> <!--buttonPop id is different from popButton-->
+<!--            </div>-->
+
+<!--            <div class="form-containerButton">-->
+<!--                <img class ="popPicture" src="img/mukkuri1.jpg" alt="Mukkuri1">-->
+<!--                <input type="button" value="It's a Match!"  onclick="">-->
+<!--            </div>-->
+        </div>
+    </section>
+
+
+    <div class="form-popup" id="form1">
+        <form class="form-container">
+            <h1>Brasil</h1>
+            <br>
+            <img class="form-information" src="img/brasil.jpg" alt="brasil" style="width: 50px;">
+            <br><br>
+            <p>
+                Brasil (localmente /bɾaˈziw/[b]), oficialmente República Federativa do Brasil (Loudspeaker.svg? escutar),[9] é o maior país da América do Sul e da região da América Latina, sendo o quinto maior do mundo em área territorial (equivalente a 47,3% do território sul-americano)[2] e sexto em população[10][11] (com mais de 210 milhões de habitantes).[3] É o único país na América onde se fala majoritariamente a língua portuguesa e o maior país lusófono do planeta,[12] além de ser uma das nações mais multiculturais e etnicamente diversas, em decorrência da forte imigração oriunda de variados locais do mundo. Sua atual Constituição, promulgada em 1988, concebe o Brasil como uma república federativa presidencialista,[9] formada pela união dos 26 estados, do Distrito Federal e dos 5 570 municípios.[9][13][nota 1]
+            </p>
+            <br>
+            <input type="button" value="Close" class="btn cancel" onclick="closePopup()">
+        </form>
+    </div>
+
+    <div class="form-popup" id="form2">
+        <form class="form-container">
+            <h1> Alemanha </h1>
+            <p>
+                Alemanha (em alemão: Deutschland), oficialmente República Federal da Alemanha (em alemão: Bundesrepublik Deutschland, IPA: [ˈbʊndəsʁepuˌblik ˈdɔʏtʃlant] Ltspkr.png ouça),[7] é um país localizado na Europa Central. É limitado a norte pelo mar do Norte, Dinamarca e pelo mar Báltico, a leste pela Polônia e pela Chéquia, a sul pela Áustria e pela Suíça e a oeste pela França, Luxemburgo, Bélgica e Países Baixos. O território da Alemanha abrange 357 021 quilômetros quadrados e é influenciado por um clima temperado sazonal. Com 82,8 milhões de habitantes em 31 de dezembro de 2015,[4] o país tem a maior população da União Europeia e é também o lar da terceira maior população de migrantes internacionais em todo o mundo.[8]
+            </p>
+            <input type="button" value="Close" class="btn cancel" onclick="closePopup()"><br>
+        </form>
+    </div>
+
+    <div class="form-popup" id="form3">
+        <form class="form-container">
+            <h1> Argentina </h1>
+            <p>
+                Argentina, oficialmente República Argentina (pronunciado em espanhol: [reˈpuβlika aɾxenˈtina]), é o segundo maior país da América do Sul em território e o terceiro em população, constituída como uma federação de 23 províncias e uma cidade autônoma, Buenos Aires, capital do país. É o oitavo maior país do mundo em área territorial e o maior entre as nações de língua espanhola, embora México, Colômbia e Espanha, que possuem menor território, sejam mais populosos.
+            </p>
+            <input type="button" value="Close" class="btn cancel" onclick="closePopup()">
+        </form>
+    </div>
+
+    <div class="form-popup" id="form4">
+        <form class="form-container">
+            <h1> Australia </h1>
+            <p>
+                Austrália (em inglês: Australia, pronunciado: [ɒˈstreɪliə, ə-], coloquialmente: [-jə]), oficialmente Comunidade da Austrália (em inglês: Commonwealth of Australia), é um país do hemisfério sul, localizado na Oceania, que compreende a menor área continental do mundo[6][7] ("continente australiano"), a ilha da Tasmânia e várias ilhas adjacentes nos oceanos Índico e Pacífico. O continente-ilha, como a Austrália por vezes é chamada, é banhado pelo oceano Índico, ao sul, e a oeste pelo mar de Timor, mar de Arafura e Estreito de Torres, a norte, e pelo mar de Coral e mar da Tasmânia, a leste. Através destes mares, tem fronteira marítima com a Indonésia, Timor-Leste e Papua-Nova Guiné, a norte, e com o território francês da Nova Caledónia, a leste, e a Nova Zelândia a sudeste.
+            </p>
+            <input type="button" value="Close" class="btn cancel" onclick="closePopup()">
+        </form>
+    </div>
+
+    <div class="form-popup" id="form5">
+        <form class="form-container">
+            <h1> Canada </h1>
+            <p>
+                O Canadá (em inglês: Canada, pronunciado [ˈkænədə] (Sobre este somescutar (ajuda·info)); em francês: Canada, pronunciado: [kanada]) é um país que ocupa grande parte da América do Norte e se estende desde o oceano Atlântico, a leste, até o oceano Pacífico, a oeste. Ao norte o país é limitado pelo oceano Ártico. É o segundo maior país do mundo em área total,[10] superado apenas pela Rússia, e a sua fronteira comum com os Estados Unidos, no sul e no noroeste, é a mais longa fronteira terrestre do mundo.
+            </p>
+            <input type="button" value="Close" class="btn cancel" onclick="closePopup()">
+        </form>
+    </div>
+
+    <div class="form-popup" id="form6">
+        <form class="form-container">
+            <h1> Suiça </h1>
+            <p>
+                Suíça (em alemão: [die] Schweiz [ˈʃvaɪts]; em suíço-alemão: Schwyz ou Schwiiz [ˈʃʋit͡s]; em francês: Suisse [sɥis(ə)]; em italiano: Svizzera [ˈzvittsera]; em romanche: Svizra [ˈʒviːtsrɐ] ou [ˈʒviːtsʁːɐ]), oficialmente Confederação Suíça (em alemão: Schweizerische Eidgenossenschaft; em francês: Confédération suisse; em italiano: Confederazione Svizzera; em romanche: Confederaziun svizra), é uma república federal composta por 26 estados, chamados de cantões, com a cidade de Berna como a sede das autoridades federais. O país está situado na Europa Central, fazendo fronteira com a Alemanha a norte, com a França a oeste, com Itália a sul e com a Áustria e o principado de Liechtenstein a leste.
+            </p>
+            <input type="button" value="Close" class="btn cancel" onclick="closePopup()">
+        </form>
+    </div>
+
+    <div class="form-popup" id="form7">
+        <form class="form-container">
+            <h1> Japão </h1>
+            <p>
+                Japão (em japonês: 日本; romaniz.: Nihon ou Nippon; oficialmente 日本国, Sobre este somNippon-koku (ajuda·info) ou Nihon koku, tradução literal: Estado do Japão) é um país insular da Ásia Oriental. Localizado no Oceano Pacífico, a leste do Mar do Japão, da República Popular da China, da Coreia do Norte, da Coreia do Sul e da Rússia, se estendendo do Mar de Okhotsk, no norte, ao Mar da China Oriental e Taiwan, ao sul. Os caracteres que compõem seu nome significam "Origem do Sol", razão pela qual o Japão é às vezes identificado como a "Terra do Sol Nascente".
+            </p>
+            <input type="button" value="Close" class="btn cancel" onclick="closePopup()">
+        </form>
+    </div>
+
+    <div class="form-popup" id="form8">
+        <form class="form-container">
+            <h1> EUA </h1>
+            <p>
+                Os Estados Unidos da América (em inglês: United States of America; pronunciado: [juːˈnaɪ.təd ˈsteɪʦ əv əˈmɛ.ɻɪ.kə]), ou simplesmente Estados Unidos (Loudspeaker.svg? United States), são uma república constitucional federal composta por 50 estados e um distrito federal. A maior parte do país situa-se na região central da América do Norte, formada por 48 estados e Washington, D.C., o distrito federal da capital. Banhado pelos oceanos Pacífico e Atlântico, faz fronteira com o Canadá ao norte e com o México ao sul. O estado do Alasca está no noroeste do continente, fazendo fronteira com o Canadá no leste e com a Rússia a oeste, através do estreito de Bering. O estado do Havaí é um arquipélago no Pacífico Central. O país também possui vários outros territórios no Caribe e no Oceano Pacífico. Com 9,37 milhões de km² de área e uma população de mais de 300 milhões de habitantes, o país é o quarto maior em área total, o quinto maior em área contígua e o terceiro em população. Os Estados Unidos são uma das nações mais multiculturais e etnicamente diversas do mundo, produto da forte imigração vinda de muitos países.[10] Sua geografia e sistemas climáticos também são extremamente diversificados, com desertos, planícies, florestas e montanhas que abrigam uma grande variedade de espécies.
+            </p>
+            <input type="button" value="Close" class="btn cancel" onclick="closePopup()">
+        </form>
+    </div>
+
+    <div class="form-popup" id="formFinal">
+        <form class="form-container">
+            <h1> Parabens!! você aprendeu sobrealguns países e suas curiosidades </h1>
+            <p>
+                Obrigado por jogar.
+                <br><br>
+                Ou clique para jogarde novo
+            </p>
+            <input type="button" value="Play Again" class="btn cancel" onclick="playAgain()">
+        </form>
+    </div>
+
+    <script src="scripts.js">
+    </script>
+
+
+</body></html>
